@@ -247,7 +247,7 @@ class NextBreakpoints:
         """
         # Estimates
         dof = len(self.xx) - 2 - 2 * self.n_breakpoints
-        t_const = scipy.stats.t.ppf(0.975, dof)
+        t_const = scipy.stats.t.ppf(0.995, dof)
 
         # Iterate over the estimate dictionary, add confidence intervals
         # to all estimators
